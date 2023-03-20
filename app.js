@@ -61,7 +61,7 @@ app.route("/articles")
  })
  });
 
-// route for all articles documents
+// route for all specific documents
 app.route("/articles/:document").get(function(req,res){
     const articlequery=req.params.document
     getspecificarticle(articlequery).then(function(founditems){
